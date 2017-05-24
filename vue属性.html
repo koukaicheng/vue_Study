@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img :src="url" :width="w" alt="">
+<input type="text" v-model="w">
+</body>
+<script src="vue.js"></script>
+<script>
+
+    var vue = new Vue({
+        el:"body",
+        data:{
+            url:"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png",
+            w:100+"px"
+        }
+    })
+</script>
+</html>

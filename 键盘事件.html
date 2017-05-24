@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<input type="text" @keyup.p="keyup($event)">
+</body>
+<script src="vue.js"></script>
+<script>
+    window.onload = function(){
+        var vue = new Vue({
+            el:"body",
+            data:{
+
+            },
+            methods:{
+               keyup:function (e) {
+                   alert(e.keyCode);
+               }
+            }
+        });
+    }
+</script>
+
+</html>
